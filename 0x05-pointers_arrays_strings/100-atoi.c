@@ -37,9 +37,7 @@ int index_digit(char *s)
 }
 
 /**
- * _sign 
-
-- determine if integer is negative
+ * _sign - determine if integer is negative
  * @s: integer
  * Return: integer 1 or -1
  */
@@ -57,8 +55,10 @@ int _sign(char *s)
 		if (s[i++] == '-')
 			negatives++;
 	}
+
 	if (negatives % 2 != 0)
 		sign = -1;
+
 	return (sign);
 }
 
@@ -67,6 +67,7 @@ int _sign(char *s)
  * @s: string to convert to integer
  * Return: digit(the integer)
  */
+
 int _atoi(char *s)
 {
 
@@ -98,8 +99,9 @@ int _atoi(char *s)
 
 	for (i = digit; i < (digit + digits_to_print); i++) /* calculate num */
 	{
-num += (s[i] - '0') * t;
+		num += (s[i] - '0') * t;
 		t /= 10;
 	}
+
 	return (num * sign);
 }
