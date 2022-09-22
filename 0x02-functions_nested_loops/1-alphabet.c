@@ -1,6 +1,12 @@
-int i;
+#include "main.h"
 
-	for (i = 97; i <= 122; i++)
-	{
-		_putchar(i);
-	}
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	print_alphabet();
+	return (0);
+}
