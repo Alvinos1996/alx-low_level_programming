@@ -1,17 +1,24 @@
 #include "main.h"
 /**
- * main - check the code for ALX School students.
- *
- * Return: Always 0.
+ * print_last_digit - returns last digit of an integer
+ * @i: integer to be checked
+ * Return: n- last digit of integer i
  */
-int main(void)
+int print_last_digit(int i)
 {
-    int r;
+	int n;
 
-    print_last_digit(98);
-    print_last_digit(0);
-    r = print_last_digit(-1024);
-    _putchar('0' + r);
-    _putchar('\n');
-    return (0);
+	n = i % 10;
+
+	if (n < 0)
+	{
+		_putchar('0' + (-n));
+		return (-n);
+	}
+
+	else
+	{
+		_putchar('0' + n);
+		return (n);
+	}
 }
