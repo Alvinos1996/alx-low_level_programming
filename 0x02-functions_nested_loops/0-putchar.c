@@ -1,12 +1,22 @@
-include "main.h"
-
+#include <stdio.h>
 /**
- * main - check the code
+ *main - Main function and entry point of the program
+ *it prints _putchar
  *
- * Return: Always 0.
+ *Return: 0(Success)
  */
+
 int main(void)
 {
-	print_alphabet();
+	putchar('_');
+	putchar('p');
+	putchar('u');
+	putchar('t');
+	putchar('c');
+	putchar('h');
+	putchar('a');
+	putchar('r');
+	putchar('\n');
+
 	return (0);
 }
